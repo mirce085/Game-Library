@@ -1,0 +1,46 @@
+﻿<Window x:Class="EFRelationships.Views.MainView"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:vm="clr-namespace:EFRelationships.ViewModels"
+        xmlns:v="clr-namespace:EFRelationships.Views"
+        mc:Ignorable="d"
+        Title="GameLibrary" Height="650" Width="900" MinHeight="650" MinWidth="900">
+
+    <Window.Resources>
+        <DataTemplate DataType="{x:Type  vm:LoginViewModel}">
+            <v:LoginView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type  vm:RegistrationViewModel}">
+            <v:RegistrationView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type  vm:UserLibraryViewModel}">
+            <v:UserLibraryView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type  vm:GameDetailsViewModel}">
+            <v:GameDetailsView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type  vm:AddCommentViewModel}">
+            <v:AddCommentView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type  vm:AddGameToUserViewModel}">
+            <v:AddGameToUserView/>
+        </DataTemplate>
+
+        <DataTemplate DataType="{x:Type  vm:UpdateAddGameViewModel}">
+            <v:UpdateAddGameView/>
+        </DataTemplate>
+
+
+    </Window.Resources>
+
+    <Grid>
+        <ContentPresenter Content="{Binding CurrentViewModel}"/>
+    </Grid>
+</Window>
