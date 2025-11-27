@@ -3,7 +3,6 @@
 A modern desktop application for managing your game collection, inspired by Steam.  Built with WPF and Entity Framework Core, following the MVVM (Model-View-ViewModel) architectural pattern for clean separation of concerns and maintainability. 
 
 ![C#](https://img.shields.io/badge/C%23-100%25-239120?logo=c-sharp)
-![WPF](https://img.shields.io/badge/WPF-. NET-512BD4)
 ![Entity Framework](https://img.shields.io/badge/Entity%20Framework-Core-512BD4)
 ![MVVM](https://img.shields.io/badge/Pattern-MVVM-blue)
 
